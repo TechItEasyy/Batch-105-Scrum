@@ -10,9 +10,7 @@ PrimeNumberCheacker pr =new PrimeNumberCheacker();
 pr.PrimeNumber();
 
 
-
-
-}	
+    }	
 	
 		
 	
