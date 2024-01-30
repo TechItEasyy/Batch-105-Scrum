@@ -2,6 +2,7 @@ package com.scrum.zero;
 import java.util.Scanner;
 
 public class PrimeNumberCheacker {
+
 	int xx;
 	int yy = 0;
 
@@ -24,4 +25,5 @@ public class PrimeNumberCheacker {
     System.out.println("Number is NOT a...PRIME");	   
     }
     
+
 }
