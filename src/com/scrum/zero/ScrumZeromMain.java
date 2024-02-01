@@ -15,7 +15,7 @@ public class ScrumZeromMain {
 		GuessTheNumber test = new GuessTheNumber();
 		test.playGame();
 		
-		//this is test line addition line added
+		//this is test line subtraction line added
 
 	}
  }
