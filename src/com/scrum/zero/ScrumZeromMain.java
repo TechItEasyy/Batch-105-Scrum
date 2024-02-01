@@ -6,10 +6,14 @@ public class ScrumZeromMain {
 
 		System.out.println("Hello Zero!!");
 	
-		ArrayOperation arr = new ArrayOperation();
-		arr.arrayOperation();
-
-
+		 ArrayOperation arr = new ArrayOperation();
+	     arr.arrayOperation();
+		
+	     PrimeNoCheacher  pr = new PrimeNoCheacher();
+		 pr.primeNoCheacher();
+       
+		 CalculatorDesign c = new CalculatorDesign();
+		 c.calculatorOperation();
 	}
  }
 
