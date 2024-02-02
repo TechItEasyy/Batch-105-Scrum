@@ -28,6 +28,9 @@ public class ScrumZeromMain {
 
 		GuessTheNumber test = new GuessTheNumber();
 		test.playGame();
+		
+		Factorial fact=new Factorial();
+		fact.factorial(6);
 
 
 	}
