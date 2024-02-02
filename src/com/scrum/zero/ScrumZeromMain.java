@@ -13,6 +13,9 @@ public class ScrumZeromMain {
 		//dummy array
 		int [] arr2=new int[] {5,1,-12,-10,9,23,-35};
 		sortType.insertionSort(arr2);
+		//dummy array
+		int [] arr3=new int[] {5,1,-12,-10,9,23,-35};
+		sortType.mergeSort(arr3,0,arr3.length-1);
 
 	}
 

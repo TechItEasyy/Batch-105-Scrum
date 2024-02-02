@@ -88,5 +88,74 @@ public class SortAlgoTypes {
 		for(int i=0;i<size;i++)
 			System.out.print(arr[i]+" ");
 	}
+	
+	//Merge Sort
+	
+	private void merge(int[]arr,int p,int q,int r) {
+		
+		System.out.println("\n\n\n"+"Array before Merge sort");
+		for(int m=0;m<arr.length;m++)
+			System.out.print(arr[m]+" ");
+		
+		//set size of subarray
+		int n1=q-p+1;
+		int n2=r-q;
+		int []L=new int[n1];
+		int []M=new int[n2];
+		//set values in subarray
+		
+		for(int i=0;i<n1;i++)
+			L[i]=arr[p+i];
+		for(int j=0;j<n2;j++)
+			M[j]=arr[q+1+j];
+		//set the pointer
+		
+		int i=0;
+		int j=0;
+		int k=p;
+		//compare the values of subarray and set the values in main array
+		
+		while(i<n1 && j<n2) {
+			if(L[i]<=M[j]) {
+				arr[k]=L[i];
+				i++;
+			}
+			else {
+				arr[k]=M[j];
+				j++;
+			}
+			k++;
+		}
+		//now rest of the data set in main array
+		
+		while(i<n1) {
+			arr[k]=L[i];
+			i++;
+			k++;
+		}
+		
+		while(j<n2) {
+			arr[k]=M[j];
+			j++;
+			k++;
+		}
+		
+		//array after Merge sort
+				System.out.println("\n"+"------------------------------------------------------------"+"\n");
+				System.out.println("Array after Merge sort");
+				for(int l=0;l<arr.length;l++)
+					System.out.print(arr[l]+" ");
+	}
+	
+	public void mergeSort(int []arr,int p,int r) {
+		if(p<r)
+		{
+		int q=(p+r)/2;
+		mergeSort(arr, p, q);
+		mergeSort(arr,q+1,r);
+		merge(arr,p,q,r);
+		}
+		
+	}
 
 }
